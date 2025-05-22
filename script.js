@@ -46,6 +46,7 @@ taskList.id = 'taskList';
 //Create li element
 const li = document.createElement('li');
 li.textContent = 'Task 1';
+li.className = 'completed';
 
 //append li to the taskList and todo-list div
 taskList.appendChild(li);

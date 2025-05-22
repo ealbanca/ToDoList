@@ -68,3 +68,12 @@ ul li::before {
     font-size: 20px;
     margin-right: 10px;
 }
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+ul li.completed::before {
+    content: "⬤";
+}
