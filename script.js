@@ -11,6 +11,30 @@ const heading = document.createElement('h2');
 heading.textContent = 'To Do List';
 todoList.appendChild(heading);
 
-// Create entry div
+//Create entry div
 const entry = document.createElement('div');
 entry.className = 'entry';
+
+// Create input field
+const input = document.createElement('input');
+input.type = 'text';
+input.id = 'input';
+input.placeholder = 'Add a new task';
+
+// Create add button
+const button = document.createElement('button');
+button.id = button;
+button.textContent = 'Add';
+
+//Append input field and Button to the entry div
+entry.appendChild(input);
+entry.appendChild(button);
+
+//Append entry to the todo-list div
+todoList.appendChild(entry);
+
+//append todo-list to the container
+container.appendChild(todoList);
+
+//Append container to the body
+document.body.appendChild(container);
