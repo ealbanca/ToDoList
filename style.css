@@ -5,7 +5,18 @@
 }
 
 .container {
+    background: linear-gradient(90deg, #848d30, #e2e8f0);
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(90deg, #848d30, #e2e8f0);
+    padding: 20px;
+}
+
+.todo-list {
+    margin: 120px auto 20px;
+    padding: 40px 30px 80px;
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+
 }
