@@ -55,3 +55,16 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+ul li {
+    list-style: none;
+    font-size: 20px;
+    user-select: none;
+}
+
+ul li::before {
+    content: "◯";
+    color: #61c064;
+    font-size: 20px;
+    margin-right: 10px;
+}
