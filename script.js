@@ -38,3 +38,15 @@ container.appendChild(todoList);
 
 //Append container to the body
 document.body.appendChild(container);
+
+// Create ul for tasks
+const taskList = document.createElement('ul');
+taskList.id = 'taskList';
+
+//Create li element
+const li = document.createElement('li');
+li.textContent = 'task 1';
+
+//append li to the taskList and todo-list div
+taskList.appendChild(li);
+todoList.appendChild(taskList);
