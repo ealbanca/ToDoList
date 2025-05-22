@@ -25,6 +25,17 @@ input.placeholder = 'Add a new task';
 const button = document.createElement('button');
 button.id = button;
 button.textContent = 'Add';
+button.addEventListener('click', function () {
+    if (input.value === '') {
+        alert('Please enter a task');
+    }
+    else {
+        let li = document.createElement('li');
+        li.innerHTML = input.value;
+        todoList.appendChild(li);
+    }
+});
+
 
 //Append input field and Button to the entry div
 entry.appendChild(input);
