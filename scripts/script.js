@@ -33,7 +33,11 @@ button.addEventListener('click', function () {
         let li = document.createElement('li');
         li.innerHTML = input.value;
         todoList.appendChild(li);
+        let span = document.createElement('span');
+        span.innerHTML = "\u00d7";
+        li.appendChild(span);
     }
+    input.value = '';
 });
 
 
