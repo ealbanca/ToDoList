@@ -23,7 +23,7 @@ input.placeholder = 'Add a new task';
 
 // Create add button
 const button = document.createElement('button');
-button.id = 'button';
+button.id = 'addButton';
 button.textContent = 'Add';
 button.addEventListener('click', function () {
     if (input.value === '') {
