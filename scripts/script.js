@@ -23,7 +23,7 @@ input.placeholder = 'Add a new task';
 
 // Create add button
 const button = document.createElement('button');
-button.id = button;
+button.id = 'button';
 button.textContent = 'Add';
 button.addEventListener('click', function () {
     if (input.value === '') {
@@ -38,8 +38,8 @@ button.addEventListener('click', function () {
         li.appendChild(span);
     }
     input.value = '';
+    //saveTask();
 });
-
 
 //Append input field and Button to the entry div
 entry.appendChild(input);
@@ -59,10 +59,14 @@ const taskList = document.createElement('ul');
 taskList.id = 'taskList';
 
 //Create li element
-const li = document.createElement('li');
-li.textContent = 'Task 1';
-li.className = 'completed';
+//const li = document.createElement('li');
+//li.textContent = 'Task 1';
+//li.className = 'completed';
+
 
 //append li to the taskList and todo-list div
 taskList.appendChild(li);
 todoList.appendChild(taskList);
+
+
+
