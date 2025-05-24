@@ -55,7 +55,7 @@ button.addEventListener('click', function () {
 // Function to remove tasks from the todo list
 todoList.addEventListener('click', function (e) {
     if (e.target.tagName === 'LI') {
-        e.target.classList.toggle('checked');
+        e.target.classList.toggle('completed');
     }
     else {
         removeTask(e);
