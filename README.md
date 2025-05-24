@@ -1,17 +1,19 @@
-# Overview
+# Overview - To Do List
 
-This Recipe Book program, developed in C#, allows users to create, save, load, and view digital recipe cards. Users can input key details such as preparation time, cooking time, ingredients, and more. All recipes can be stored in a file for easy access and future use.
+This is a to-do list program developed using JS, HTML, and CSS. This program provides the user three main functions: add a task, mark it as completed, and remove it. This program keeps the list of tasks stored using local storage. This program has 4 main functions: addTask, removeTask, saveList, and loadList.
 
-Here is a short video explaining how the Recipe Book program works, uploaded on YouTube 
+Here is a short video explaining how the To Do List program works, uploaded on YouTube 
 
 [Software Demo Video](https://youtu.be/G1YM_EWv4yg)
 
 # Development Environment
 
-* C#
+* JavaScript
+* HTML
+* CSS
 
 # Useful Websites
 
-* [Codecademy](https://www.codecademy.com/learn/learn-c-sharp)
-* [Learn C#](https://code.visualstudio.com/docs/setup/setup-overview](https://www.learncs.org/ )
-* [W3 Schools](https://cdnapisec.kaltura.com/p/1157612/sp/115761200/embedIframeJs/uiconf_id/47306393/partner_id/1157612?iframeembed=true&playerId=kaltura_player_1687278321&entry_id=1_zyyx43ke](https://www.w3schools.com/cs/index.php )
+* [Codecademy](https://www.codecademy.com/learn/learn-c-sharp](https://www.codecademy.com/catalog/language/javascript )
+* [JavaScript.Info](https://javascript.info/)
+* [W3 Schools](https://www.w3schools.com/js/DEFAULT.asp)
