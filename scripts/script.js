@@ -1,3 +1,5 @@
+import { removeTask } from "./removeTask.js";
+import { addTask } from "./addTask.js";
 // Create container div
 const container = document.createElement('div');
 container.className = 'container';
@@ -44,30 +46,19 @@ container.appendChild(todoList);
 //Append container to the body
 document.body.appendChild(container);
 
+
+
 button.addEventListener('click', function () {
-    if (input.value === '') {
-        alert('Please enter a task');
-    }
-    else {
-        let li = document.createElement('li');
-        li.innerHTML = input.value;
-        let span = document.createElement('span');
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
-        taskList.appendChild(li);
-    }
-    input.value = '';
-    //saveTask();
+    addTask(input, taskList);
 });
 
 // Function to remove tasks from the todo list
-
 todoList.addEventListener('click', function (e) {
     if (e.target.tagName === 'LI') {
         e.target.classList.toggle('checked');
     }
-    else if (e.target.tagName === 'SPAN') {
-        e.target.parentElement.remove();
+    else {
+        removeTask(e);
     }
 }, false);
 
