@@ -62,7 +62,7 @@ ul li {
     font-size: 20px;
     user-select: none;
     position: relative;
-    padding: 12px 8 px 12px 40px;
+    padding: 12px 8px 12px 40px;
     cursor: pointer;
 }
 
@@ -98,5 +98,4 @@ ul li span {
 
 ul li span:hover {
     cursor: pointer;
-    color: #ff0000;
 }
