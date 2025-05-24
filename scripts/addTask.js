@@ -1,5 +1,7 @@
+//imported the saveList function from storage.js
 import { saveList } from "./storage.js";
 
+//created an exportable addtask function, since it will be called on the script.js file
 export function addTask(input, taskList) {
     if (input.value === '') {
         alert('Please enter a task');
