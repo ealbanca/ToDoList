@@ -4,7 +4,7 @@ This is a to-do list program developed using JS, HTML, and CSS. This program pro
 
 Here is a short video explaining how the To Do List program works, uploaded on YouTube 
 
-[Software Demo Video](https://youtu.be/Uz0fU620DnU)
+[To Do List Demo Video](https://youtu.be/Uz0fU620DnU)
 
 # Development Environment
 
