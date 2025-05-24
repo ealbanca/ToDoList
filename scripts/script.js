@@ -44,16 +44,6 @@ container.appendChild(todoList);
 //Append container to the body
 document.body.appendChild(container);
 
-//Create li element
-//const li = document.createElement('li');
-//li.textContent = 'Task 1';
-//li.className = 'completed';
-
-
-//append li to the taskList and todo-list div
-//taskList.appendChild(li);
-//todoList.appendChild(taskList);
-
 button.addEventListener('click', function () {
     if (input.value === '') {
         alert('Please enter a task');
@@ -69,4 +59,15 @@ button.addEventListener('click', function () {
     input.value = '';
     //saveTask();
 });
+
+// Function to remove tasks from the todo list
+
+todoList.addEventListener('click', function (e) {
+    if (e.target.tagName === 'LI') {
+        e.target.classList.toggle('checked');
+    }
+    else if (e.target.tagName === 'SPAN') {
+        e.target.parentElement.remove();
+    }
+}, false);
 
