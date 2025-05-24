@@ -16,7 +16,7 @@
     margin: 120px auto 20px;
     padding: 40px 30px 80px;
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
     background-color: white;
     border-radius: 10px;
 
@@ -31,6 +31,20 @@
 
 }
 
+.todo-list h3 {
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.todo-list p {
+    font-size: 18px;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
 .entry {
     display: flex;
     justify-content: space-between;
@@ -40,7 +54,7 @@
 }
 
 input[type="text"] {
-    width: 82%;
+    width: 86%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

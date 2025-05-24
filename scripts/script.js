@@ -14,6 +14,14 @@ todoList.className = 'todo-list';
 const heading = document.createElement('h2');
 heading.textContent = 'To Do List';
 
+// My name
+const name = document.createElement('h3');
+name.textContent = 'By: Hared Albancando Robles';
+
+//Added Instructions
+const instructions = document.createElement('p');
+instructions.textContent = 'Please enter a new task. If you have already enter tasks, you can click on a task to mark it as completed, or click the "X" to remove a task. Remember to keep your list always updated.';
+
 //Create entry div
 const entry = document.createElement('div');
 entry.className = 'entry';
@@ -39,6 +47,8 @@ taskList.id = 'taskList';
 
 //Add elements to the todo-list
 todoList.appendChild(heading);
+todoList.appendChild(name);
+todoList.appendChild(instructions);
 todoList.appendChild(entry);
 todoList.appendChild(taskList);
 
