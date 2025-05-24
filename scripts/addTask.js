@@ -1,3 +1,4 @@
+
 export function addTask(input, taskList) {
     if (input.value === '') {
         alert('Please enter a task');

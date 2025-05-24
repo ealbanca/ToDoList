@@ -1,5 +1,6 @@
 import { removeTask } from "./removeTask.js";
 import { addTask } from "./addTask.js";
+
 // Create container div
 const container = document.createElement('div');
 container.className = 'container';
@@ -46,10 +47,9 @@ container.appendChild(todoList);
 //Append container to the body
 document.body.appendChild(container);
 
-
-
 button.addEventListener('click', function () {
     addTask(input, taskList);
+
 });
 
 // Function to remove tasks from the todo list
@@ -61,4 +61,6 @@ todoList.addEventListener('click', function (e) {
         removeTask(e);
     }
 }, false);
+
+
 
