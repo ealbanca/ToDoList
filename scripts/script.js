@@ -21,7 +21,7 @@ name.textContent = 'By: Hared Albancando Robles';
 
 //Added Instructions at the top of the list
 const instructions = document.createElement('p');
-instructions.textContent = 'Please enter a new task. If you have already enter tasks, you can click on a task to mark it as completed, or click the "X" to remove a task. Remember to keep your list always updated.';
+instructions.textContent = 'Please enter a new task. If you have already enter tasks, you can click on a task to mark it as completed, or click the "X" to remove a task. Remember to keep your list updated always.';
 
 //Create entry div ( will hold the input field and button)
 const entry = document.createElement('div');
