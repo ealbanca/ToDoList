@@ -1,6 +1,6 @@
 # Overview - To Do List
 
-This is a to-do list program developed using JS, HTML, and CSS. This program provides the user three main functions: add a task, mark it as completed, and remove it. This program keeps the list of tasks stored using local storage. This program has 4 main functions: addTask, removeTask, saveList, and loadList.
+This to-do list program was developed using JS, HTML, and CSS. This program allows the user to manage a list of tasks: add them, mark them as completed, and remove them. This program keeps the list of tasks stored using local storage. 
 
 Here is a short video explaining how the To Do List program works, uploaded on YouTube 
 
