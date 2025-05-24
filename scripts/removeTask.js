@@ -1,4 +1,4 @@
-
+import { saveList } from './storage.js';
 
 export function removeTask(e) {
     if (e.target.tagName === 'SPAN') {

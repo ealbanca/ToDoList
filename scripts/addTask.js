@@ -1,3 +1,5 @@
+import { saveList } from "./storage.js";
+
 export function addTask(input, taskList) {
     if (input.value === '') {
         alert('Please enter a task');
@@ -11,4 +13,5 @@ export function addTask(input, taskList) {
         taskList.appendChild(li);
     }
     input.value = '';
+    saveList(taskList);
 }

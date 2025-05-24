@@ -60,6 +60,7 @@ button.addEventListener('click', function () {
 todoList.addEventListener('click', function (e) {
     if (e.target.tagName === 'LI') {
         e.target.classList.toggle('completed');
+        saveList(taskList);
     }
     else {
         removeTask(e, taskList);
