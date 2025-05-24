@@ -1,5 +1,6 @@
 import { removeTask } from "./removeTask.js";
 import { addTask } from "./addTask.js";
+import { saveList, loadList } from "./storage.js";
 
 // Create container div
 const container = document.createElement('div');
@@ -47,8 +48,11 @@ container.appendChild(todoList);
 //Append container to the body
 document.body.appendChild(container);
 
+loadList(taskList);
+
 button.addEventListener('click', function () {
     addTask(input, taskList);
+    saveList(taskList);
 
 });
 
@@ -58,7 +62,7 @@ todoList.addEventListener('click', function (e) {
         e.target.classList.toggle('completed');
     }
     else {
-        removeTask(e);
+        removeTask(e, taskList);
     }
 }, false);
 
